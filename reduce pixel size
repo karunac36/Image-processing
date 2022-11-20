@@ -1,0 +1,29 @@
+//reduce spatial resolution of digital image(reduse pixel size)
+clc;           
+clear all;
+I=imread("D:\scilab-6.0.2\IPCV-4.1.2-win64-61-bin\IPCV\images\Lena.png");
+subplot(2,3,1);
+imshow(I);
+title("Orignal image 512*512");
+I2=imresize(I,0.5);
+subplot(2,3,2);
+imshow(I2);
+title("Orignal image 256*256");
+I3=imresize(I,0.25);
+subplot(2,3,3);
+imshow(I3);
+title("Orignal image 128*128");
+I4=imresize(I,0.125);
+subplot(2,3,4);
+imshow(I4);                    // perform by karuna chavan 03
+title("Orignal image 64*64");
+I5=imresize(I,0.0625);
+subplot(2,3,5);
+imshow(I5);
+title("Orignal image 16*16");
+I6=imresize(I,0.03125);
+subplot(2,3,6);
+imshow(I6);
+title("Orignal image 8*8");
+
+// perform by karuna chavan
