@@ -1,0 +1,13 @@
+
+clear all;
+clc;
+img= imread("D:\scilab-6.0.2\IPCV-4.1.2-win64-61-bin\IPCV\images\lena.png");
+img=rgb2gray(img);
+[r,c,s]=size(img);  // karuna chavan 
+k=[1 2 3 4 5 6 7 8];
+for i =1:length(k)
+    d=2^i;
+    z=round(img/d);
+    subplot(3,3,i)    
+    imshow(z*d);
+end
