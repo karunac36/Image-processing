@@ -1,0 +1,4 @@
+a=imread("D:\scilab-6.0.2\IPCV-4.1.2-win64-61-bin\IPCV\images\Lena_dark.png");
+subplot(2,3,1);//   Karuna Chavan
+B=imread('gaussian.jpg');c=imsubtract(A,B);
+imshow(c);imwrite(c,'Difference.jpg')
